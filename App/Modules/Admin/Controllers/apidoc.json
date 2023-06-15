@@ -1,0 +1,11 @@
+{
+	"name": "API Documentation",
+	"version": "0.1.0",
+	"description": "Compare API project",
+	"title": "Compare API Version 1.0",
+	"url": "http://apibeta.compargo.com/v1",
+	"template": {
+		"withCompare": true,
+		"withGenerator": true
+	}
+}

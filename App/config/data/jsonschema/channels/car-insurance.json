@@ -1,0 +1,266 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "car-insurance",
+    "type": "object",
+    "properties": {
+        "areaName": {
+            "label": "areaName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "areaName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "areaName must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+        "brandName": {
+            "label": "brandName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "brandName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "brandName must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+    	"companyName": {
+            "label": "companyName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "companyName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "companyName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "productName": {
+            "label": "productName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "productName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "productName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "carModel": {
+            "label": "carModel",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "carModel must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "carModel must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "carTrim": {
+            "label": "carTrim",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "carTrim must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "carTrim must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "bodyType": {
+            "label": "bodyType",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "bodyType must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "bodyType must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "carValues2014": {
+            "label": "carValues2014",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2014 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2013": {
+            "label": "2013",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2013 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2012": {
+            "label": "carValues2012",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2012 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2011": {
+            "label": "carValues2011",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2011 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2010": {
+            "label": "carValues2010",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2010 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2009": {
+            "label": "carValues2009",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2009 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2008": {
+            "label": "carValues2008",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2008 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "carValues2007": {
+            "label": "carValues2007",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "carValues2007 must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        }
+    }
+}

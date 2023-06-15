@@ -1,0 +1,170 @@
+[Tue, 01 Jul 14 05:08:37 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:10:00 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:15:07 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:40:26 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:40:57 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:46:45 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:46:50 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:49:02 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:49:27 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:51:03 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Tue, 01 Jul 14 05:51:24 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Thu, 03 Jul 14 03:37:10 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 03 Jul 14 03:37:32 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 03 Jul 14 03:37:32 +0200][INFO] DESCRIBE `users`
+[Thu, 03 Jul 14 03:37:33 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Thu, 03 Jul 14 11:41:18 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='subsidiaries'
+[Thu, 03 Jul 14 11:42:23 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='subsidiaries'
+[Thu, 03 Jul 14 11:42:23 +0200][INFO] DESCRIBE `subsidiaries`
+[Thu, 03 Jul 14 11:42:23 +0200][INFO] SELECT `subsidiaries`.`id`, `subsidiaries`.`company_id`, `subsidiaries`.`name`, `subsidiaries`.`email`, `subsidiaries`.`phone`, `subsidiaries`.`fax`, `subsidiaries`.`address`, `subsidiaries`.`contact`, `subsidiaries`.`logo`, `subsidiaries`.`link`, `subsidiaries`.`description`, `subsidiaries`.`language`, `subsidiaries`.`status`, `subsidiaries`.`created`, `subsidiaries`.`modified` FROM `subsidiaries`
+[Thu, 03 Jul 14 11:42:46 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 03 Jul 14 11:42:46 +0200][INFO] DESCRIBE `users`
+[Thu, 03 Jul 14 11:42:46 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Thu, 03 Jul 14 11:42:54 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 03 Jul 14 11:42:54 +0200][INFO] DESCRIBE `users`
+[Thu, 03 Jul 14 11:42:54 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Thu, 03 Jul 14 11:59:36 +0200][INFO] SELECT `users`.`id`, `users`.`group_id`, `users`.`email_address`, `users`.`first_name`, `users`.`last_name`, `users`.`password`, `users`.`salt`, `users`.`hash`, `users`.`status`, `users`.`created`, `users`.`modified` FROM `users`
+[Thu, 03 Jul 14 11:59:57 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='admin_users'
+[Thu, 03 Jul 14 11:59:57 +0200][INFO] DESCRIBE `admin_users`
+[Thu, 03 Jul 14 11:59:57 +0200][INFO] SELECT `admin_users`.`id`, `admin_users`.`group_id`, `admin_users`.`email_address`, `admin_users`.`first_name`, `admin_users`.`last_name`, `admin_users`.`password`, `admin_users`.`salt`, `admin_users`.`hash`, `admin_users`.`status`, `admin_users`.`created`, `admin_users`.`modified` FROM `admin_users`
+[Thu, 03 Jul 14 12:16:58 +0200][INFO] SELECT `admin_users`.`id`, `admin_users`.`group_id`, `admin_users`.`email_address`, `admin_users`.`first_name`, `admin_users`.`last_name`, `admin_users`.`password`, `admin_users`.`salt`, `admin_users`.`hash`, `admin_users`.`status`, `admin_users`.`created`, `admin_users`.`modified` FROM `admin_users` WHERE `admin_users`.`email_address` = 'sarah.sampan@novafabrik.com' LIMIT :1
+[Thu, 03 Jul 14 12:17:45 +0200][INFO] SELECT `admin_users`.`id`, `admin_users`.`group_id`, `admin_users`.`email_address`, `admin_users`.`first_name`, `admin_users`.`last_name`, `admin_users`.`password`, `admin_users`.`salt`, `admin_users`.`hash`, `admin_users`.`status`, `admin_users`.`created`, `admin_users`.`modified` FROM `admin_users` WHERE `admin_users`.`email_address` = 'alexis.quinto@yahoo.com' LIMIT :1
+[Thu, 03 Jul 14 12:27:04 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `groups` WHERE `groups`.`id` = :0
+[Thu, 03 Jul 14 12:27:05 +0200][INFO] INSERT INTO `users` (`group_id`, `email_address`, `first_name`, `last_name`, `password`, `salt`, `hash`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Thu, 03 Jul 14 12:28:18 +0200][INFO] SELECT `subsidiaries`.`id`, `subsidiaries`.`company_id`, `subsidiaries`.`name`, `subsidiaries`.`email`, `subsidiaries`.`phone`, `subsidiaries`.`fax`, `subsidiaries`.`address`, `subsidiaries`.`contact`, `subsidiaries`.`logo`, `subsidiaries`.`link`, `subsidiaries`.`description`, `subsidiaries`.`language`, `subsidiaries`.`status`, `subsidiaries`.`created`, `subsidiaries`.`modified` FROM `subsidiaries`
+[Fri, 04 Jul 14 05:58:23 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='attributes'
+[Fri, 04 Jul 14 05:58:23 +0200][INFO] DESCRIBE `attributes`
+[Fri, 04 Jul 14 05:58:24 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 06:28:06 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 06:28:22 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 06:29:58 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 06:31:45 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 06:32:47 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 06:34:44 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 08:22:52 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='products'
+[Fri, 04 Jul 14 08:22:54 +0200][INFO] DESCRIBE `products`
+[Fri, 04 Jul 14 08:22:54 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Fri, 04 Jul 14 08:26:06 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Fri, 04 Jul 14 08:29:38 +0200][INFO] SELECT `attributes`.`id`, `attributes`.`type`, `attributes`.`name`, `attributes`.`value`, `attributes`.`property`, `attributes`.`is_required`, `attributes`.`status`, `attributes`.`created`, `attributes`.`modified` FROM `attributes`
+[Mon, 07 Jul 14 12:04:27 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='products'
+[Mon, 07 Jul 14 12:04:28 +0200][INFO] DESCRIBE `products`
+[Mon, 07 Jul 14 12:04:28 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:04:28 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:04:28 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:26:03 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:26:03 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:26:03 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:26:15 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:26:15 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:26:15 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:28:11 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:28:11 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:28:11 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:36:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:36:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:36:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:37:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:37:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:37:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:38:33 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:38:33 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:38:33 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:38:49 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:38:49 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:38:49 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:39:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:39:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:39:19 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:43:18 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:43:18 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:43:18 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:49:50 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:49:50 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:49:50 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:50:22 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:50:22 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:50:22 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:51:07 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:51:08 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:51:08 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:51:56 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:51:56 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:51:56 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:52:45 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:52:45 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:52:45 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:52:45 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 12:55:26 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 12:55:26 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 12:55:26 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 12:55:26 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:10:12 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:10:12 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:10:12 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:10:12 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:10:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:10:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:10:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:10:59 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:15:24 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:15:24 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:15:24 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:15:24 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:29:43 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:29:43 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:29:43 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:29:43 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:30:37 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:30:37 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:30:37 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:30:37 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:31:55 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:31:55 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:31:55 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:31:55 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:32:49 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:32:49 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:32:49 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:32:49 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:33:04 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:33:04 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:33:04 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:33:04 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:33:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:33:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:33:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:33:59 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:37:23 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:37:23 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:37:23 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:37:23 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:37:34 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:37:34 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:37:34 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:37:34 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:39:49 +0200][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='products'
+[Mon, 07 Jul 14 13:39:50 +0200][INFO] DESCRIBE `products`
+[Mon, 07 Jul 14 13:39:50 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:39:50 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:39:50 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:39:50 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:40:51 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:40:51 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:40:51 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:40:51 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:40:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:40:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:40:59 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:40:59 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:47:15 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:47:15 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:47:15 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:47:15 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:48:54 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:48:54 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:48:54 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:48:54 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[Mon, 07 Jul 14 13:51:48 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `channels` WHERE `channels`.`id` = :0
+[Mon, 07 Jul 14 13:51:48 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `companies` WHERE `companies`.`id` = :0
+[Mon, 07 Jul 14 13:51:48 +0200][INFO] SELECT COUNT(*) AS `rowcount` FROM `product_areas` WHERE `product_areas`.`id` = :0
+[Mon, 07 Jul 14 13:51:48 +0200][INFO] INSERT INTO `products` (`channel_id`, `company_id`, `product_area_id`, `name`, `description`, `featured`, `logo`, `link`, `language`, `status`, `created`, `modified`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)

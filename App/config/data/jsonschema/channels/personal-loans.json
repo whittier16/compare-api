@@ -1,0 +1,1602 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "personal-loans",
+    "type": "object",
+    "properties": {
+    	"channelId": {
+            "label": "channelId",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "channelId must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "channelId must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+        "brandId": {
+            "label": "brandId",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "brandId must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "brandId must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+        "description": {
+            "label": "description",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "description must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "description must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+        "alias": {
+            "label": "alias",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "alias must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "alias must be less than 255 characters long"
+                },
+                {
+                    "rule": "slug",
+                    "options": {
+                        "separator": "-"
+                    },
+                    "message": "alias must only have alpha-numeric and -"
+                }
+            ],
+            "required": false
+        },
+        "areaName": {
+            "label": "areaName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "areaName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "areaName must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+        "brandName": {
+            "label": "brandName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "brandName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "brandName must be less than 255 characters long"
+                }
+            ],
+            "required": false
+        },
+        "companyName": {
+            "label": "companyName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "companyName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "companyName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "name": {
+            "label": "name",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "name must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "name must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "productName": {
+            "label": "productName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "productName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "productName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "productImage": {
+            "label": "productImage",
+            "type": "url",
+            "validators": [
+                {
+                    "rule": "url",
+                    "message": "productImage must be a valid URL"
+                }
+            ],
+            "required": false
+        },
+        "linkInformation": {
+            "label": "linkInformation",
+            "type": "url",
+            "validators": [
+                {
+                    "rule": "url",
+                    "message": "linkInformation must be a valid URL"
+                }
+            ],
+            "required": false
+        },
+        "linkApplication": {
+            "label": "linkApplication",
+            "type": "url",
+            "validators": [
+                {
+                    "rule": "url",
+                    "message": "linkApplication must be a valid URL"
+                }
+            ],
+            "required": false
+        },
+        "featured": {
+            "label": "featured",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "featured must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },    
+        "hasApplyButton": {
+            "label": "hasApplyButton",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "hasApplyButton must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "overlayOrClickthrough": {
+            "label": "overlayOrClickthrough",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 1
+                    },
+                    "message": "overlayOrClickthrough must be a number and minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options" : {
+                        "max": 2
+                    },
+                    "message": "overlayOrClickthrough must be a number and maximum of 2"
+                }
+            ],
+            "required": true
+        },
+        "phoneNumber": {
+            "label": "phoneNumber",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "phoneNumber must be a number"
+                }
+            ],
+            "required": true
+        },
+        "status": {
+            "label": "status",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "status must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "personalInstallment": {
+            "label": "personalInstallment",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "personalInstallment must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "nonBankFinancial": {
+            "label": "nonBankFinancial",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "nonBankFinancial must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "speedyCash": {
+            "label": "speedyCash",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "speedyCash must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "taxLoan": {
+            "label": "taxLoan",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "taxLoan must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "carLoan": {
+            "label": "carLoan",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "carLoan must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "payDayLoan": {
+            "label": "payDayLoan",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "payDayLoan must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "islamicLoan": {
+            "label": "islamicLoan",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "islamicLoan must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "loanType": {
+            "label": "loanType",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "loanType must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },  
+        "greatFor1": {
+            "label": "greatFor1",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor1 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor1 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor2": {
+            "label": "greatFor2",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor2 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor2 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor3": {
+            "label": "greatFor3",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor3 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor3 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor4": {
+            "label": "greatFor4",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor4 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor4 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor5": {
+            "label": "greatFor5",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor5 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor5 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor6": {
+            "label": "greatFor6",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor6 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor6 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor7": {
+            "label": "greatFor7",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor7 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor7 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "minLoanAmount": {
+            "label": "minLoanAmount",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "minLoanAmount must be a number"
+                }
+            ],
+            "required": true
+        },
+        "maxLoanAmount": {
+            "label": "maxLoanAmount",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "maxLoanAmount must be a number"
+                }
+            ],
+            "required": true
+        },
+        "loanAmountMultipleSalary": {
+            "label": "loanAmountMultipleSalary",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "loanAmountMultipleSalary must be a number"
+                }
+            ],
+            "required": true
+        },
+        "minTenure": {
+            "label": "minTenure",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "minTenure must be a number"
+                }
+            ],
+            "required": true
+        },
+        "maxTenure": {
+            "label": "maxTenure",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "maxTenure must be a number"
+                }
+            ],
+            "required": true
+        },
+        "promoPicture": {
+            "label": "promoPicture",
+            "type": "url",
+            "validators": [
+                {
+                    "rule": "url",
+                    "message": "promoPicture must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "promoTitle": {
+            "label": "promoTitle",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoTitle must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "promoTitle must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoContent": {
+            "label": "promoContent",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoContent must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "promoContent must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoApplyPicture": {
+            "label": "promoApplyPicture",
+            "type": "url",
+            "validators": [
+                {
+                    "rule": "url",
+                    "message": "promoApplyPicture must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "promoApplyContent": {
+            "label": "promoApplyContent",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoApplyContent must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "promoApplyContent must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "ribbonBest": {
+            "label": "ribbonBest",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "ribbonBest must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "ribbonBest must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "interestRateDependsOn": {
+            "label": "interestRateDependsOn",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "interestRateDependsOn must be a number and a minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options" : {
+                        "max": 3
+                    },
+                    "message": "interestRateDependsOn must be a number and a maximum of 3"
+                }
+            ],
+            "required": true
+        },
+        "tenure3Months": {
+            "label": "tenure3Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure3Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure6Months": {
+            "label": "tenure6Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure6Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure9Months": {
+            "label": "tenure9Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure9Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure12Months": {
+            "label": "tenure12Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure12Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure18Months": {
+            "label": "tenure18Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure18Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure24Months": {
+            "label": "tenure24Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure24Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure30Months": {
+            "label": "tenure30Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure30Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure36Months": {
+            "label": "tenure36Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure36Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure48onths": {
+            "label": "tenure48onths",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure48onths must be a number"
+                }
+            ],
+            "required": true
+        },
+		"tenure50months": {
+            "label": "tenure50months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure50months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure62Months": {
+            "label": "tenure62Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure62Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure74Months": {
+            "label": "tenure74Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure74Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure86Months": {
+            "label": "tenure86Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure86Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure98Months": {
+            "label": "tenure98Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure98Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenure110Months": {
+            "label": "tenure110Months",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "tenure110Months must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo": {
+            "label": "amountUpTo",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "amountUpTo must be 1 character(s) long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "amountUpTo must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "ampuntUptoIntervals": {
+            "label": "ampuntUptoIntervals",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "ampuntUptoIntervals must be 1 character(s) long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "ampuntUptoIntervals must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo1": {
+            "label": "amountUpTo1",
+            "type": "float",
+            "validators": [
+            	{
+                    "message": "amountUpTo1 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo2": {
+            "label": "amountUpTo2",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo2 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo3": {
+            "label": "amountUpTo3",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo3 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo4": {
+            "label": "amountUpTo4",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo4 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo5": {
+            "label": "amountUpTo5",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo5 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo6": {
+            "label": "amountUpTo6",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo6 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo7": {
+            "label": "amountUpTo7",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo7 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo8": {
+            "label": "amountUpTo8",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo8 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo9": {
+            "label": "amountUpTo9",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo9 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "amountUpTo10": {
+            "label": "amountUpTo10",
+            "type": "float",
+            "validators": [
+                {
+                    "message": "amountUpTo10 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo": {
+            "label": "incomeUpTo",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "incomeUpTo must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "incomeUpTo must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpToIntervals": {
+            "label": "incomeUpToIntervals",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "incomeUpToIntervals must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "incomeUpToIntervals must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo1": {
+            "label": "incomeUpTo1",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo1 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo2": {
+            "label": "incomeUpTo2",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo2 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo3": {
+            "label": "incomeUpTo3",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo3 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo4": {
+            "label": "incomeUpTo4",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo4 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo5": {
+            "label": "incomeUpTo5",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo5 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo6": {
+            "label": "incomeUpTo6",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo6 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo7": {
+            "label": "incomeUpTo7",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo7 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo8": {
+            "label": "incomeUpTo8",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo8 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo9": {
+            "label": "incomeUpTo9",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo9 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "incomeUpTo10": {
+            "label": "incomeUpTo10",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "incomeUpTo10 must be a number"
+                }
+            ],
+            "required": true
+        },
+        "floatingHandlingFee": {
+            "label": "floatingHandlingFee",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "floatingHandlingFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "fixedHandlingFee": {
+            "label": "fixedHandlingFee",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "fixedHandlingFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "minFloatingHandlingFee": {
+            "label": "minFloatingHandlingFee",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "minFloatingHandlingFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "maxFloatingHandlingFee": {
+            "label": "maxFloatingHandlingFee",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "maxFloatingHandlingFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "monthlyFee": {
+            "label": "monthlyFee",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "monthlyFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "wakalahFee": {
+            "label": "wakalahFee",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "wakalahFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "latePaymentFee": {
+            "label": "latePaymentFee",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "latePaymentFee must be at least 1 character"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "latePaymentFee must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "documentaryStampTax": {
+            "label": "documentaryStampTax",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "documentaryStampTax must be at least 1 character"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "documentaryStampTax must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "preterminationFee": {
+            "label": "preterminationFee",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "preterminationFee must be at least 1 character"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "preterminationFee must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "repaymentOptionADA": {
+            "label": "repaymentOptionADA",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "repaymentOptionADA must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "repaymentOptionPDC": {
+            "label": "repaymentOptionPDC",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "repaymentOptionPDC must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "repaymentOptionOTC": {
+            "label": "repaymentOptionOTC",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "repaymentOptionOTC must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "repaymentOptionOnline": {
+            "label": "repaymentOptionOnline",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "repaymentOptionOnline must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "repaymentOptionMobile": {
+            "label": "repaymentOptionMobile",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "repaymentOptionMobile must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "openToForeigners": {
+            "label": "openToForeigners",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "openToForeigners must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "minimumAge": {
+            "label": "minimumAge",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "minimumAge must be a number"
+                }
+            ],
+            "required": true
+        },
+        "maximumAge": {
+            "label": "maximumAge",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "maximumAge must be a number"
+                }
+            ],
+            "required": true
+        },
+        "grossMonthlyIncome": {
+            "label": "grossMonthlyIncome",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "grossMonthlyIncome must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenureEmployed": {
+            "label": "tenureEmployed",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "tenureEmployed must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenureSelfEmployment": {
+            "label": "tenureSelfEmployment",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "tenureSelfEmployment must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenureProfession": {
+            "label": "tenureProfession",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "tenureProfession must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenureOFW": {
+            "label": "tenureOFW",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "tenureOFW must be a number"
+                }
+            ],
+            "required": true
+        },
+        "tenureEmployment": {
+            "label": "tenureEmployment",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tenureEmployment must be at least 1 character"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tenureEmployment must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        }
+    }
+}    

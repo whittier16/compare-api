@@ -1,0 +1,196 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "areas",
+    "type": "object",
+    "properties": {
+    	"name": {
+            "label": "name",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "companyId be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 1024
+                    },
+                    "message": "companyId be less than 1024 characters long"
+                }
+            ],
+            "required": true
+        },
+        "category": {
+            "label": "category",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "category must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "category must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "description": {
+            "label": "description",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "description must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 2048
+                    },
+                    "message": "description must be less than 2048 characters long"
+                }
+            ],
+            "required": false
+        },
+        "language": {
+            "label": "language",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "language must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "language must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "bounds": {
+            "label": "bounds",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "bounds must be greater than 2 characters long"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 2048
+                    },
+                    "message": "bounds must be greater than 2048 characters long"
+                }
+            ],
+            "required": true
+        },
+        "lft": {
+            "label": "lft",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "lft must be greater than 2 characters long"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 36
+                    },
+                    "message": "lft must be greater than 36 characters long"
+                }
+            ],
+            "required": true
+        },
+        "parentId": {
+            "label": "parentId",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "parentId must be greater than 2 characters long"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 255
+                    },
+                    "message": "parentId must be greater than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rght": {
+            "label": "rght",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "rght must be greater than 2 characters long"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 36
+                    },
+                    "message": "rght must be greater than 36 characters long"
+                }
+            ],
+            "required": true
+        },
+        "scope": {
+            "label": "scope",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "scope must be greater than 2 characters long"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 36
+                    },
+                    "message": "scope must be greater than 36 characters long"
+                }
+            ],
+            "required": true
+        }
+    }
+}

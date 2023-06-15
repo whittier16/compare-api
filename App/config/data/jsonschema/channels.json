@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "channels",
+    "type": "object",
+    "properties": {
+        "name": {
+            "label": "name",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "name must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "name must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "alias": {
+            "label": "alias",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "alias must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "alias must be less than 255 characters long"
+                },
+                {
+                    "rule": "slug",
+                    "options": {
+                        "separator": "-"
+                    },
+                    "message": "alias must only have alpha-numeric and {separator}"
+                }
+            ],
+            "required": false
+        },
+        "description": {
+            "label": "description",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "description must be greater than 2 characters long"
+                }
+            ],
+            "required": false
+        },
+        "revenueValue": {
+            "label": "revenueValue",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "revenueValue must be a number and have 2 decimal places"
+                }
+            ],
+            "required": false
+        },
+        "perPage": {
+            "label": "perPage",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "perPage must be a number"
+                }
+            ],
+            "required": false
+        },
+        "options": {
+            "title": "options",
+            "type": "object",
+            "phone": {
+                "label": "phone",
+                "type": "int",
+                "validators": [
+                    {
+                        "message": "phone must be a number"
+                    }
+                ],
+                "required": false
+            },
+            "email": {
+                "label": "email",
+                "type": "email",
+                "validators": [
+                    {
+                        "message": "email must be a valid email"
+                    }
+                ],
+                "required": false
+            },
+            "address": {
+                "label": "address",
+                "type": "string",
+                "validators": [
+                    {
+                        "rule": "minLength",
+                        "options": {
+                            "min": 2
+                        },
+                        "message": "address must be greater than 2 characters long"
+                    },
+                    {
+                        "rule": "maxLength",
+                        "options": {
+                            "max": 255
+                        },
+                        "message": "address must be less than 255 characters long"
+                    }
+                ],
+                "required": true
+            },
+            "fax": {
+                "label": "fax",
+                "type": "int",
+                "validators": [
+                    {
+                        "message": "fax must be a number"
+                    }
+                ],
+                "required": false
+            }
+        }
+    }
+}

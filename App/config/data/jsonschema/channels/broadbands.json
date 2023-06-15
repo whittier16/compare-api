@@ -1,0 +1,1473 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "broadbands",
+    "type": "object",
+    "properties": {
+        "areaName": {
+            "label": "areaName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "areaName must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "areaName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "brandName": {
+            "label": "brandName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "brandName must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "brandName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "companyName": {
+            "label": "companyName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "companyName must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "companyName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },        
+        "productName": {
+            "label": "productName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "productName must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "productName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },        
+        "productImage": {
+            "label": "productImage",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "productImage must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "productImage must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "linkInformation": {
+            "label": "linkInformation",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "linkInformation must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "linkInformation must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "linkApplication": {
+            "label": "linkApplication",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "linkApplication must be minimum of 1 character(s)"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "linkApplication must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "featured": {
+            "label": "featured",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "featured must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "hasApplyButton": {
+            "label": "hasApplyButton",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "hasApplyButton must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "overlayOrClickthrough": {
+            "label": "overlayOrClickthrough",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "overlayOrClickthrough must be a number and must be a minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "overlayOrClickthrough must be a number and must be a maximum of 2"
+                }
+            ],
+            "required": true
+        },
+        "phoneNumber": {
+            "label": "phoneNumber",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "phoneNumber must be a number"
+                }
+            ],
+            "required": true
+        },
+        "status": {
+            "label": "status",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "status must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },          
+        "greatFor1": {
+            "label": "greatFor1",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor1 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor1 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor2": {
+            "label": "greatFor2",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor2 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor2 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        }, 
+        "greatFor3": {
+            "label": "greatFor3",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "greatFor3 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "greatFor3 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "connectionReach": {
+            "label": "connectionReach",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "connectionReach must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "connectionReach must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "location1": {
+            "label": "location1",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "location1 must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 2048
+                    },
+                    "message": "location1 must be less than 1024 characters long"
+                }
+            ],
+            "required": true
+        },
+        "location2": {
+            "label": "location2",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "location2 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "location2 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "location3": {
+            "label": "location3",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "location3 must be a number and must be a minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 3
+                    },
+                    "message": "location3 must be a number and must be a maximum of 3"
+                }
+            ],
+            "required": true
+        },
+        "device": {
+            "label": "device",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "device must be a number and must be a minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 4
+                    },
+                    "message": "device must be a number and must be a maximum of 4"
+                }
+            ],
+            "required": true
+        },
+        "deviceCapacity": {
+            "label": "deviceCapacity",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "deviceCapacity must be a number"
+                }
+            ],
+            "required": true
+        },
+        "deviceConditions": {
+            "label": "deviceConditions",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "deviceConditions must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "deviceConditions must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "connectionType": {
+            "label": "connectionType",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "connectionType must be a number and must be a minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 5
+                    },
+                    "message": "connectionType must be a number and must be a maximum of 5"
+                }
+            ],
+            "required": true
+        },
+        "postpaidPrepaid": {
+            "label": "postpaidPrepaid",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "postpaidPrepaid must be a number and must be a minimum of 1"
+                },
+                {
+                    "rule": "max",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "postpaidPrepaid must be a number and must be a maximum of 2"
+                }
+            ],
+            "required": true
+        },         
+        "contractLength": {
+            "label": "contractLength",
+	        "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "contractLength must be a number"
+                }
+            ],
+            "required": true
+        },
+        "contractLengthConditions": {
+            "label": "contractLengthConditions",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "contractLengthConditions must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "contractLengthConditions must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },                       
+        "downloadSpeed": {
+            "label": "downloadSpeed",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "downloadSpeed must be a number and have 0 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "uploadSpeed": {
+            "label": "uploadSpeed",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "uploadSpeed must be a number"
+                }
+            ],
+            "required": true
+        },
+        "speedConditions": {
+            "label": "speedConditions",
+            "type": "string",
+	        "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "speedConditions must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "speedConditions must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "dataInMb": {
+            "label": "dataInMb",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "dataInMb must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "dataInMb must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "dataInHours": {
+            "label": "dataInHours",
+	        "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "dataInHours must be a number"
+                }
+            ],
+            "required": true
+        },
+        "dataCondition": {
+            "label": "dataCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "dataCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "dataCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },        
+        "promoPicture": {
+            "label": "promoPicture",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoPicture must be greater than 1 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoTitle": {
+            "label": "promoTitle",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoTitle must be greater than 1 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoContent": {
+            "label": "promoContent",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoContent must be greater than 1 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoApplyButton": {
+            "label": "promoApplyButton",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoApplyButton must be greater than 1 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoApplyContent": {
+            "label": "promoApplyContent",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "promoApplyContent must be greater than 1 characters long"
+                }
+            ],
+            "required": true
+        },
+        "ribbonBest": {
+            "label": "ribbonBest",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "ribbonBest must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "ribbonBest must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "monthlyCost": {
+            "label": "monthlyCost",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "monthlyCost must be a number"
+                }
+            ],
+            "required": true
+        },
+        "membershipFee": {
+            "label": "membershipFee",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 0
+                    },
+                    "message": "membershipFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "deviceFee": {
+            "label": "deviceFee",
+            "type": "float",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "installationCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "installationCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "installationFee": {
+            "label": "installationFee",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "installationCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "installationCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "installationCondition": {
+            "label": "installationCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "installationCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "installationCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "deposit": {
+            "label": "deposit",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "deposit must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "deposit must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "depositCondition": {
+            "label": "depositCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "depositCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "depositCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cancellationFee": {
+            "label": "cancellationFee",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "cancellationFee must have 2 decimal places"
+                },
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 0
+                    },
+                    "message": "cancellationFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cancellationFeeCondition": {
+            "label": "cancellationFeeCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "cancellationFeeCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cancellationFeeCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },        
+        "support": {
+            "label": "support",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "support must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "support must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "installation": {
+            "label": "installation",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "installation must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "installation must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "useYourOwnModem": {
+            "label": "useYourOwnModem",
+            "type": "bool",
+            "validators": [
+                {
+                    "rule": "bool",
+                    "message": "useYourOwnModem must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "existingPhoneline": {
+            "label": "existingPhoneline",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "existingPhoneline must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "existingPhoneline must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "phoneBundleName": {
+            "label": "phoneBundleName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "phoneBundleName must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "phoneBundleName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "phoneDetails1": {
+            "label": "phoneDetails1",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "phoneDetails1 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "phoneDetails1 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "phoneDetails2": {
+            "label": "phoneDetails2",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "phoneDetails2 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "phoneDetails2 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "phoneDetails3": {
+            "label": "phoneDetails3",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "phoneDetails3 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "phoneDetails3 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "phoneDetails4": {
+            "label": "phoneDetails4",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "phoneDetails4 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "phoneDetails4 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "phoneDetails5": {
+            "label": "phoneDetails5",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "phoneDetails5 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "phoneDetails5 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvBundleName": {
+            "label": "tvBundleName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvBundleName must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvBundleName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvLocalChannels": {
+            "label": "tvLocalChannels",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvLocalChannels must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvLocalChannels must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvEntertainment": {
+            "label": "tvEntertainment",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvEntertainment must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvEntertainment must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvSports": {
+            "label": "tvSports",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvSports must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvSports must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvNews": {
+            "label": "tvNews",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvNews must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvNews must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvLifestyle": {
+            "label": "tvLifestyle",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvLifestyle must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvLifestyle must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "tvExtraCondition": {
+            "label": "tvExtraCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "tvExtraCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "tvExtraCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetBundleName": {
+            "label": "gadgetBundleName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetBundleName must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetBundleName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetImage": {
+            "label": "gadgetImage",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetImage must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetImage must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetSpecs1": {
+            "label": "gadgetSpecs1",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetSpecs1 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetSpecs1 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetSpecs2": {
+            "label": "gadgetSpecs2",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetSpecs2 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetSpecs2 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetSpecs3": {
+            "label": "gadgetSpecs3",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetSpecs3 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetSpecs3 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetSpecs4": {
+            "label": "gadgetSpecs4",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetSpecs4 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetSpecs4 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "gadgetSpecs5": {
+            "label": "gadgetSpecs5",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "gadgetSpecs5 must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "gadgetSpecs5 must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "mobilePackage": {
+            "label": "mobilePackage",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "mobilePackage must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "mobilePackage must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "mobileMbCondition": {
+            "label": "mobileMbCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "mobileMbCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "mobileMbCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "mobile3GCondition": {
+            "label": "mobile3GCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "mobile3GCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "mobile3GCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "mobileAdditionalInfo": {
+            "label": "mobileAdditionalInfo",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "mobileAdditionalInfo must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "mobileAdditionalInfo must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "wifiCondition": {
+            "label": "wifiCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 1
+                    },
+                    "message": "wifiCondition must be greater than 1 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "wifiCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        }        
+    }
+}

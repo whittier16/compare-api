@@ -1,0 +1,2337 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "credit-cards",
+    "type": "object",
+    "properties": {
+        "companyName": {
+            "label": "companyName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "companyName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "companyName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "productName": {
+            "label": "productName",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "productName must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "productName must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "productImage": {
+            "label": "productImage",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "url",
+                    "message": "productImage must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "alias": {
+            "label": "alias",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "alias must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "alias must be less than 255 characters long"
+                },
+                {
+                    "rule": "slug",
+                    "options": {
+                        "separator": "-"
+                    },
+                    "message": "alias must only have alpha-numeric and -"
+                }
+            ],
+            "required": false
+        },
+        "linkInformation": {
+            "label": "linkInformation",
+            "type": "url",
+            "validators": [
+                {
+                    "message": "linkInformation must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "linkApplication": {
+            "label": "linkApplication",
+            "type": "url",
+            "validators": [
+                {
+                    "message": "linkApplication must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "featured": {
+            "label": "featured",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "featured must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": false
+        },
+        "hasApplyButton": {
+            "label": "hasApplyButton",
+            "type": "bool",
+            "validators": [
+            	{
+                    "message": "hasApplyButton must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+         "hasRedirect": {
+            "label": "hasRedirect",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "hasRedirect must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "overlayOrClickthrough": {
+            "label": "overlayOrClickthrough",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "overlayOrClickthrough must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "phoneNumber": {
+            "label": "phoneNumber",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options" : {
+                        "min": 0
+                    },
+                    "message": "phoneNumber must be a number"
+                }
+            ],
+            "required": true
+        },
+        "status": {
+            "label": "status",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "status must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "providerCard": {
+            "label": "providerCard",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 0
+                    },
+                    "message": "providerCard must be a number"
+                }
+            ],
+            "required": true
+        },
+        "premiumCard": {
+            "label": "premiumCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "premiumCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "octopusCard": {
+            "label": "octopusCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "octopusCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "islamicCard": {
+            "label": "islamicCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "islamicCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "businessCard": {
+            "label": "businessCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "islamicCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "studentCard": {
+            "label": "studentCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "studentCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "travelCard": {
+            "label": "travelCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "studentCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "shoppingCard": {
+            "label": "shoppingCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "shoppingCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "specialtyCard": {
+            "label": "specialtyCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "shoppingCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "onlineShoppingCard": {
+            "label": "onlineShoppingCard",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "onlineShoppingCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "coBranded": {
+            "label": "coBranded",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "onlineShoppingCard must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "greatFor1": {
+            "label": "greatFor1",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "greatFor1 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor2": {
+            "label": "greatFor2",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "greatFor2 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "greatFor3": {
+            "label": "greatFor3",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "greatFor3 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "bewareThat1": {
+            "label": "bewareThat1",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "bewareThat1 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "bewareThat2": {
+            "label": "bewareThat2",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "bewareThat2 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "bewareThat3": {
+            "label": "bewareThat3",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "bewareThat3 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoPicture": {
+            "label": "promoPicture",
+            "type": "url",
+            "validators": [
+                {
+                    "message": "promoPicture must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "promoTitle": {
+            "label": "promoTitle",
+            "type": "string",
+             "validators": [
+           	 	{
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "promoTitle must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "promoTitle must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoContent": {
+            "label": "promoContent",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "promoContent must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "promoApplyPicture": {
+            "label": "promoApplyPicture",
+            "type": "url",
+            "validators": [
+                {
+                    "message": "promoApplyPicture must be a valid URL"
+                }
+            ],
+            "required": true
+        },
+        "promoApplyContent": {
+            "label": "promoApplyContent",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "promoApplyContent must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "ribbonBest": {
+            "label": "ribbonBest",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "{ribbonBest must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rewardConversion": {
+            "label": "rewardConversion",
+            "type": "int",
+            "validators": [
+                {
+                    "rule": "min",
+                    "options": {
+                        "min": 0
+                    },
+                    "message": "rewardConversion must be a number"
+                }
+            ],
+            "required": true
+        },
+        "rewardConversionCondition": {
+            "label": "rewardConversionCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "rewardConversionCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "rewardConversionCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rewardMultiplier": {
+            "label": "rewardMultiplier",
+            "type": "int",
+            "validators": [
+                 {
+                    "message": "rewardMultiplier must be a number"
+                }
+            ],
+            "required": true
+        },
+        "rewardMultiplierCondition": {
+            "label": "rewardMultiplierCondition",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "rewardMultiplierCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "rewardMultiplierCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rewardSpendingShopping": {
+            "label": "rewardSpendingShopping",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "rewardSpendingShopping must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "rewardSpendingShopping must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rewardSpendingEntertainment": {
+            "label": "rewardSpendingEntertainment",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "rewardSpendingEntertainment must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "rewardSpendingEntertainment must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rewardSpendingDining": {
+            "label": "rewardSpendingDining",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "rewardSpendingDining must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "rewardSpendingDining must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "rewardSpendingOther": {
+            "label": "rewardSpendingOther",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "rewardSpendingOther must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "rewardSpendingOther must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "earningPointsOctopus": {
+            "label": "earningPointsOctopus",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "earningPointsOctopus must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "earningPointsOctopus must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "earningPointsAutomaticTransaction": {
+            "label": "earningPointsAutomaticTransaction",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "earningPointsAutomaticTransaction must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "earningPointsAutomaticTransaction must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "earningPointsOnlineBillPayments": {
+            "label": "earningPointsOnlineBillPayments",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "earningPointsOnlineBillPayments must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "earningPointsOnlineBillPayments must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "earningPointsOnlineShopping": {
+            "label": "earningPointsOnlineShopping",
+            "type": "string",
+            "validators": [
+                 {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "earningPointsOnlineShopping must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "earningPointsOnlineShopping must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "earningPointsInstallment": {
+            "label": "earningPointsInstallment",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "earningPointsInstallment must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "earningPointsInstallment must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cashbackDining": {
+            "label": "cashbackDining",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackDining must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackDiningCondition": {
+            "label": "cashbackDiningCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackDiningCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackDiningCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cashbackShopping": {
+            "label": "cashbackShopping",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackShopping must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackShoppingCondition": {
+            "label": "cashbackShoppingCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackShoppingCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackShoppingCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cashbackGroceries": {
+            "label": "cashbackGroceries",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackGroceries must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackGroceriesCondition": {
+            "label": "cashbackGroceriesCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackGroceriesCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackGroceriesCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cashbackEntertainment": {
+            "label": "cashbackEntertainment",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackEntertainment must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackEntertainmentCondition": {
+            "label": "cashbackEntertainmentCondition",
+            "type": "string",
+            "validators": [
+            	{
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackEntertainmentCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackEntertainmentCondition must be less than 255 characters long"
+                }    
+            ],
+            "required": true
+        },
+        "cashbackPetrol": {
+            "label": "cashbackPetrol",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackPetrol must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackPetrolCondition": {
+            "label": "cashbackPetrolCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackPetrolCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackPetrolCondition must be less than 255 characters long"
+                }   
+            ],
+            "required": true
+        },
+        "cashbackLocalRetail": {
+            "label": "cashbackLocalRetail",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackLocalRetail must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackLocalRetailCondition": {
+            "label": "cashbackLocalRetailCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackLocalRetailCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackLocalRetailCondition must be less than 255 characters long"
+                }   
+            ],
+            "required": true
+        },
+        "cashbackOverseasSpending": {
+            "label": "cashbackOverseasSpending",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackOverseasSpending must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackOverseasCondition": {
+            "label": "cashbackOverseasCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackOverseasCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackOverseasCondition must be less than 255 characters long"
+                }   
+            ],
+            "required": true
+        },
+        "cashbackGeneral": {
+            "label": "cashbackGeneral",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackGeneral must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cashbackGeneralCondition": {
+            "label": "cashbackGeneralCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackGeneralCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackGeneralCondition must be less than 255 characters long"
+                }   
+            ],
+            "required": true
+        },
+        "cashbackOther": {
+            "label": "cashbackOther",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashbackOther must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashbackOtherCondition": {
+            "label": "cashbackOtherCondition",
+            "type": "string",
+            "validators": [
+            	{
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackOtherCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackOtherCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cashbackMetaCondition": {
+            "label": "cashbackMetaCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashbackMetaCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cashbackMetaCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeLocalRetails": {
+            "label": "cbeLocalRetails",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cbeLocalRetails must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cbeLocalRetailsCondition": {
+            "label": "cbeLocalRetailsCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeLocalRetailsCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeLocalRetailsCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeLocalDining": {
+            "label": "cbeLocalDining",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cbeLocalDining must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cbeLocalDiningCondition": {
+            "label": "cbeLocalDiningCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeLocalDiningCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeLocalDiningCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeOverseasTransaction": {
+            "label": "cbeOverseasTransaction",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cbeOverseasTransaction must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cbeOverseasTransactionCondition": {
+            "label": "cbeOverseasTransactionCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeOverseasTransactionCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeOverseasTransactionCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeOnlineShopping": {
+            "label": "cbeOnlineShopping",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cbeOnlineShopping must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cbeOnlineShoppingCondition": {
+            "label": "cbeOnlineShoppingCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeOnlineShoppingCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeOnlineShoppingCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeOnlineBillPayment": {
+            "label": "cbeOnlineBillPayment",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "cbeOnlineBillPayment must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "cbeOnlineBillPaymentCondition": {
+            "label": "cbeOnlineBillPaymentCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeOnlineBillPaymentCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeOnlineBillPaymentCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeOctopusAavs": {
+            "label": "cbeOctopusAavs",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "cbeOctopusAavs must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "cbeOctopusAavsCondition": {
+            "label": "cbeOctopusAavsCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeOctopusAavsCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeOctopusAavsCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeAutomaticTransaction": {
+            "label": "cbeAutomaticTransaction",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cbeAutomaticTransaction must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cbeAutomaticTransactionCondition": {
+            "label": "cbeAutomaticTransactionCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeAutomaticTransactionCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeAutomaticTransactionCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeInstalment": {
+            "label": "cbeInstalment",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cbeInstalment must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cbeInstalmentCondition": {
+            "label": "cbeInstalmentCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeInstalmentCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeInstalmentCondition must be less than 255 characters long"
+                }  
+            ],
+            "required": true
+        },
+        "cbeSpecialCondition": {
+            "label": "cbeSpecialCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbeSpecialCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbeSpecialCondition must be less than 255 characters long"
+                } 
+            ],
+            "required": true
+        },
+        "cbsAllNewTransactions": {
+            "label": "cbsAllNewTransactions",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsAllNewTransactions must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsCashCoupons": {
+            "label": "cbsCashCoupons",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsCashCoupons must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsAutopusAavs": {
+            "label": "cbsAutopusAavs",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsAutopusAavs must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsPetrol": {
+            "label": "cbsPetrol",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsPetrol must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsDining": {
+            "label": "cbsDining",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "minLength must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsShopping": {
+            "label": "cbsShopping",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsShopping must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsEntertainment": {
+            "label": "cbsEntertainment",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsEntertainment must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsTravel": {
+            "label": "cbsTravel",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsTravel must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cbsSpecialCondition": {
+            "label": "cbsSpecialCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cbsSpecialCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "cbsSpecialCondition must be less than 255 characters long"
+                } 
+            ],
+            "required": true
+        },
+        "discountsDining": {
+            "label": "discountsDining",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "discountsDining must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "discountsDiningCondition": {
+            "label": "discountsDiningCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsDiningCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsDiningCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "discountsShopping": {
+            "label": "discountsShopping",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "discountsShopping must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "discountsShoppingCondition": {
+            "label": "discountsShoppingCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsShoppingCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsShoppingCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "discountsGroceries": {
+            "label": "discountsGroceries",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "discountsGroceries must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "discountsGroceriesCondition": {
+            "label": "discountsGroceriesCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsGroceriesCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsGroceriesCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "discountsEntertainment": {
+            "label": "discountsEntertainment",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "discountsEntertainment must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "discountsEntertainmentCondition": {
+            "label": "discountsEntertainmentCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsEntertainmentCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsEntertainmentCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "discountsPetrol": {
+            "label": "discountsPetrol",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "discountsPetrol must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "discountsPetrolCondition": {
+            "label": "discountsPetrolCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsPetrolCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsPetrolCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "discountsOther": {
+            "label": "discountsOther",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "discountsOther must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "discountsOtherCondition": {
+            "label": "discountsOtherCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsOtherCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsOtherCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "discountsMetaCondition": {
+            "label": "discountsMetaCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "discountsMetaCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "discountsMetaCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "milesConversionLocal": {
+            "label": "milesConversionLocal",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "milesConversionLocal must be a number"
+                }
+            ],
+            "required": true
+        },
+        "milesConversionConditionLocal": {
+            "label": "milesConversionConditionLocal",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "milesConversionConditionLocal must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "milesConversionConditionLocal must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "milesConversionOverseas": {
+            "label": "milesConversionOverseas",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "milesConversionOverseas must be a number"
+                }
+            ],
+            "required": true
+        },
+        "milesConversionConditionOverseas": {
+            "label": "milesConversionConditionOverseas",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "milesConversionConditionOverseas must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "milesConversionConditionOverseas must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "milesPrograms": {
+            "label": "milesPrograms",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "milesPrograms must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "milesPrograms must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "insurance": {
+            "label": "insurance",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "insurance must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "insurance must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "airportLounge": {
+            "label": "airportLounge",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "airportLounge must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "airportLounge must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "travelOther": {
+            "label": "travelOther",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "travelOther must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "travelOther must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "fraudProtection": {
+            "label": "fraudProtection",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "fraudProtection must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "fraudProtection must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "installmentPlan": {
+            "label": "installmentPlan",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "installmentPlan must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "installmentPlan must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "personalAssistant": {
+            "label": "personalAssistant",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "personalAssistant must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "personalAssistant must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "parking": {
+            "label": "parking",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "parking must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "parking must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "creditLimit": {
+            "label": "creditLimit",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "creditLimit must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "creditLimit must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "purchaseInterest": {
+            "label": "purchaseInterest",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "purchaseInterest must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "purchaseApr": {
+            "label": "purchaseApr",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "purchaseApr must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "cashAdvanceInterest": {
+            "label": "cashAdvanceInterest",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashAdvanceInterest must be a number"
+                }
+            ],
+            "required": true
+        },
+        "cashAdvanceApr": {
+            "label": "cashAdvanceApr",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "cashAdvanceApr must be a number"
+                }
+            ],
+            "required": true
+        },
+        "interestFreePeriod": {
+            "label": "interestFreePeriod",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "interestFreePeriod must be a number"
+                }
+            ],
+            "required": true
+        },
+        "delinquencyRetailPurchaseApr": {
+            "label": "delinquencyRetailPurchaseApr",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "delinquencyRetailPurchaseApr must be a number"
+                }
+            ],
+            "required": true
+        },
+        "delinquencyCashAdvanceApr": {
+            "label": "delinquencyCashAdvanceApr",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "delinquencyCashAdvanceApr must be a number"
+                }
+            ],
+            "required": true
+        },
+        "annualFee": {
+            "label": "annualFee",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "annualFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "annualFeePromo": {
+            "label": "annualFeePromo",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "annualFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "annualFeeWaiver": {
+            "label": "annualFeeWaiver",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "annualFeeWaiver must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "foreignTransactionFee": {
+            "label": "foreignTransactionFee",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "foreignTransactionFee must be a number"
+                }
+            ],
+            "required": true
+        },
+        "annualFeeSupplementary": {
+            "label": "annualFeeSupplementary",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "annualFeeSupplementary must be a number"
+                }
+            ],
+            "required": true
+        },
+        "annualFeeSupplementaryCondition": {
+            "label": "annualFeeSupplementaryCondition",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "annualFeeSupplementaryCondition must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "annualFeeSupplementaryCondition must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cashAdvanceFee": {
+            "label": "cashAdvanceFee",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cashAdvanceFee must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "cardReplacementFee": {
+            "label": "cardReplacementFee",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "cardReplacementFee must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "minimumRepayment": {
+            "label": "minimumRepayment",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "minimumRepayment must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "latePayment": {
+            "label": "latePayment",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "latePayment must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "creditOverLimit": {
+            "label": "creditOverLimit",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "creditOverLimit must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "balanceTransferLowest": {
+            "label": "balanceTransferLowest",
+            "type": "float",
+            "validators": [
+                {
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "balanceTransferLowest must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "balanceTransferMonth": {
+            "label": "balanceTransferMonth",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "balanceTransferMonth must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "balanceTransferMonth must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "balanceTransferLongest": {
+            "label": "balanceTransferLongest",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "balanceTransferLongest must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "balanceTransferHighlight": {
+            "label": "balanceTransferHighlight",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "balanceTransferHighlight must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "balanceTransferAware": {
+            "label": "balanceTransferAware",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "balanceTransferAware must be a number"
+                }
+            ],
+            "required": true
+        },
+        "monthlyIncomeLocals": {
+            "label": "monthlyIncomeLocals",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "monthlyIncomeLocals must be a number"
+                }
+            ],
+            "required": true
+        },
+        "monthlyIncomeForeigners": {
+            "label": "monthlyIncomeForeigners",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "monthlyIncomeForeigners must be a number"
+                }
+            ],
+            "required": true
+        },
+        "minimumEmploymentSalaried": {
+            "label": "minimumEmploymentSalaried",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "minimumEmploymentSalaried must be a number"
+                }
+            ],
+            "required": true
+        },
+        "minimumEmploymentSelfEmployed": {
+            "label": "minimumEmploymentSelfEmployed",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "minimumEmploymentSelfEmployed must be a number"
+                }
+            ],
+            "required": true
+        },
+        "minimumAge": {
+            "label": "minimumAge",
+            "type": "int",
+            "validators": [
+                {
+                    "message": "minimumAge must be a number"
+                }
+            ],
+            "required": true
+        },
+        "minimumAgeSupplementary": {
+            "label": "minimumAgeSupplementary",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "minimumAgeSupplementary must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "existingCardHolder": {
+            "label": "existingCardHolder",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "existingCardHolder must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "nationality": {
+            "label": "nationality",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "nationality must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "nationality must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "residence": {
+            "label": "residence",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "residence must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "other1": {
+            "label": "other1",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "other1 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        },
+        "other2": {
+            "label": "other2",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "other2 must be greater than 2 characters long"
+                }
+            ],
+            "required": true
+        }
+    }
+}

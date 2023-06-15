@@ -1,0 +1,191 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "companies",
+    "type": "object",
+    "properties": {
+        "featured": {
+            "label": "featured",
+            "type": "bool",
+            "validators": [
+                {
+                    "message": "featured must be valid Boolean value. The value must be either 1 or 0"
+                }
+            ],
+            "required": true
+        },
+        "name": {
+            "label": "name",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "name must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "name must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "alias": {
+            "label": "alias",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "alias must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "alias must be less than 2 characters long"
+                },
+                {
+                    "rule": "slug",
+                    "options": {
+                        "separator": "-"
+                    },
+                    "message": "alias must only have alpha-numeric and '-'"
+                }
+            ],
+            "required": false
+        },
+        "logo": {
+            "label": "url",
+            "type": "url", 
+            "validators": [
+                {   
+                    "message": "logo must be a URL"
+                }
+            ],
+            "required": false
+        },
+
+        "link": {
+            "label": "link",
+            "type": "url",
+            "validators": [
+                {
+                    "message": "link must be a URL"
+                }
+            ],
+            "required": false
+        },
+        "description": {
+            "label": "description",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "description must be greater than 2 characters long"
+                }
+            ],
+            "required": false
+        },
+        "language": {
+            "label": "language",
+            "type": "string",
+            "validators": [
+                {
+                    "rule": "minLength",
+                    "options": {
+                        "min": 2
+                    },
+                    "message": "language must be greater than 2 characters long"
+                },
+                {
+                    "rule": "maxLength",
+                    "options": {
+                        "max": 255
+                    },
+                    "message": "language must be less than 255 characters long"
+                }
+            ],
+            "required": true
+        },
+        "revenueValue": {
+            "label": "revenueValue",
+            "type": "float",
+            "validators": [
+            	{
+                    "rule": "precision",
+                    "options": {
+                        "precision": 2
+                    },
+                    "message": "revenueValue must be a number and have 2 decimal places"
+                }
+            ],
+            "required": true
+        },
+        "options": {
+            "title": "options",
+            "type": "object",
+            "phone": {
+	            "label": "phone",
+	            "type": "int",
+	            "validators": [
+	            	{
+	                    "message": "phone must be a number"
+	                }
+	            ],
+	            "required": false
+	        },
+	     	"email": {
+	            "label": "email",
+	            "type": "email",
+	            "validators": [
+	            	{
+	                    "message": "email must be a valid email"
+	                }
+	            ],
+	            "required": false
+	        },
+	        "address": {
+	            "label": "address",
+	            "type": "string",
+		        "validators": [
+	                {
+	                    "rule": "minLength",
+	                    "options": {
+	                        "min": 2
+	                    },
+	                    "message": "address must be greater than 2 characters long"
+	                },
+	                {
+	                    "rule": "maxLength",
+	                    "options": {
+	                        "max": 255
+	                    },
+	                    "message": "address must be less than 255 characters long"
+	                }
+	            ],
+		        "required": true
+	        },
+	        "fax": {
+	            "label": "fax",
+                "type": "int",
+                "validators": [
+                    {
+                        "message": "fax must be a number"
+                    }
+                ],
+                "required": false
+	        }
+        }
+    }
+}

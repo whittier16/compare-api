@@ -1,0 +1,15 @@
+{
+    "require": {
+        "guzzle/guzzle": "~3.7",
+        "swiftmailer/swiftmailer": "@stable",
+        "kzykhys/ciconia": "~1.0.0",
+        "alexbilbie/mongoqb": "*",
+        "imagine/imagine": "0.6.*@dev"
+    },
+    "autoload": {
+        "files": ["App/Common/Lib/Application/Libraries/Filterus/functions.php"],
+        "psr-0": {
+            "Filterus": "lib"
+        }
+    }
+}
